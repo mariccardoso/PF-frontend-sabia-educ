@@ -46,9 +46,9 @@ export default function Login() {
       const role = userExists.role?.toLowerCase();
 
       if (role === 'aluno') {
-        router.push('/aluno/dashboard');
+        router.push('/aluno/');
       } else if (role === 'professor' || role === 'pai') {
-        router.push('/professor/dashboard');
+        router.push('/professor/');
       } else {
         router.push('/');
       }

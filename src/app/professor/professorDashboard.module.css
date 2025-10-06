@@ -1,0 +1,419 @@
+.container {
+  min-height: 100vh;
+  background: #ffffff;
+  padding: 2rem;
+  font-family: 'Comic Sans MS', 'Poppins', sans-serif;
+  color: #333;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  background: linear-gradient(135deg, #FBC737, #e6b800);
+  padding: 1.5rem 2rem;
+  border-radius: 25px;
+  border: 3px solid #FBC737;
+  box-shadow: 0 6px 15px rgba(251, 199, 55, 0.3);
+}
+
+.header h1 {
+  color: #ffffff;
+  font-size: 2rem;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(219, 161, 0, 0.3);
+}
+
+.header p {
+  color: #ffffff;
+  margin: 0.5rem 0 0 0;
+  font-size: 1.1rem;
+}
+
+.logout {
+  background: rgb(219,161,0);
+  color: #fff;
+  border: 3px solid #FBC737;
+  padding: 0.8rem 1.5rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(219, 161, 0, 0.3);
+}
+
+.logout:hover {
+  transform: scale(1.1) rotate(2deg);
+  background: #e6b800;
+  box-shadow: 0 6px 12px rgba(230, 184, 0, 0.4);
+}
+
+/* Cards de Estatísticas */
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.statCard {
+  background: #ffffff;
+  border: 3px solid #FBC737;
+  border-radius: 20px;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 0 6px 15px rgba(251, 199, 55, 0.2);
+  transition: all 0.3s ease;
+}
+
+.statCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(251, 199, 55, 0.3);
+}
+
+.statIcon {
+  font-size: 2.5rem;
+  background: linear-gradient(45deg, #FBC737, #e6b800);
+  border-radius: 15px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(251, 199, 55, 0.3);
+}
+
+.statInfo h3 {
+  font-size: 2rem;
+  color: #e6b800;
+  margin: 0;
+  font-weight: bold;
+}
+
+.statInfo p {
+  color: #666;
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Layout principal */
+.dashboardContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+/* Seção de Alunos */
+.studentsSection h2,
+.activitiesSection h2 {
+  color: #e6b800;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding-left: 0.5rem;
+  border-left: 4px solid #FBC737;
+}
+
+.studentsList,
+.activitiesList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.studentsList a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.studentCard {
+  background: #ffffff;
+  border: 3px solid #FBC737;
+  border-radius: 20px;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 0 4px 10px rgba(251, 199, 55, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.studentCard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(251, 199, 55, 0.4);
+}
+
+.studentAvatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #FBC737, #e6b800);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.2rem;
+  box-shadow: 0 3px 8px rgba(251, 199, 55, 0.3);
+}
+
+.studentInfo {
+  flex: 1;
+}
+
+.studentInfo h4 {
+  color: #e6b800;
+  margin: 0 0 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+.studentInfo p {
+  color: #666;
+  margin: 0 0 1rem 0;
+  font-size: 0.9rem;
+}
+
+.studentProgress span {
+  font-size: 0.8rem;
+  color: #e6b800;
+  font-weight: bold;
+}
+
+.progressBar {
+  width: 100%;
+  height: 8px;
+  background: #f5f5f5;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 0.5rem;
+}
+
+.progressFill {
+  height: 100%;
+  background: linear-gradient(90deg, #FBC737, #e6b800);
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+/* Seção de Atividades */
+.activityCard {
+  background: #ffffff;
+  border: 3px solid #FBC737;
+  border-radius: 20px;
+  padding: 1.5rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  box-shadow: 0 4px 10px rgba(251, 199, 55, 0.2);
+}
+
+.activityIcon {
+  font-size: 2rem;
+  background: linear-gradient(45deg, #FBC737, #e6b800);
+  border-radius: 12px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 8px rgba(251, 199, 55, 0.3);
+}
+
+.activityInfo h4 {
+  color: #e6b800;
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.activityInfo p {
+  color: #666;
+  margin: 0 0 1rem 0;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.activityMeta {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.difficulty {
+  background: linear-gradient(45deg, #FBC737, #e6b800);
+  color: #ffffff;
+  padding: 0.3rem 0.8rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.completions {
+  color: #666;
+  font-size: 0.8rem;
+}
+
+/* Progresso Recente */
+.recentProgress {
+  background: #ffffff;
+  border: 3px solid #FBC737;
+  border-radius: 25px;
+  padding: 2rem;
+  box-shadow: 0 6px 15px rgba(251, 199, 55, 0.2);
+}
+
+.recentProgress h2 {
+  color: #e6b800;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding-left: 0.5rem;
+  border-left: 4px solid #FBC737;
+}
+
+.progressList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.progressItem {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr 80px;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 15px;
+  border: 2px solid #FBC737;
+}
+
+.progressStudent {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.miniAvatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #FBC737, #e6b800);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.progressActivity {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.progressStatus {
+  padding: 0.4rem 0.8rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.completed {
+  background: linear-gradient(45deg, #FBC737, #e6b800);
+  color: #ffffff;
+}
+
+.inProgress {
+  background: #fff8dc;
+  color: #e6b800;
+  border: 2px solid #FBC737;
+}
+
+.notStarted {
+  background: #f5f5f5;
+  color: #666;
+  border: 2px solid #ddd;
+}
+
+.progressScore {
+  text-align: center;
+  font-weight: bold;
+  color: #e6b800;
+  font-size: 1.1rem;
+}
+
+/* Estados vazios */
+.noData {
+  text-align: center;
+  padding: 2rem;
+  color: #666;
+  background: #f8f9fa;
+  border-radius: 15px;
+  border: 2px dashed #FBC737;
+}
+
+.noData::before {
+  content: '📋';
+  font-size: 3rem;
+  display: block;
+  margin-bottom: 1rem;
+  opacity: 0.5;
+}
+
+/* Loading */
+.loading {
+  text-align: center;
+  font-size: 1.4rem;
+  margin-top: 4rem;
+  color: #e6b800;
+  font-weight: bold;
+}
+
+.loading::after {
+  content: ' 🌻';
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+  .dashboardContent {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+  
+  .header {
+    padding: 1rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .statsGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .progressItem {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 0.5rem;
+  }
+  
+  .studentCard {
+    flex-direction: column;
+    text-align: center;
+  }
+}
