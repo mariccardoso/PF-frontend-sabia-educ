@@ -1,0 +1,46 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.container h2 {
+  font-family: "Aristotelica Bold", sans-serif;
+  font-size: 2rem;
+  color: #333;
+  margin-top: 20px;
+}
+
+.error {
+  color: #e74c3c;
+  background-color: #fdf2f2;
+  border: 1px solid #f5c6cb;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+.registerLink {
+  margin-top: 20px;
+  color: #666;
+}
+
+.registerLink a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+.registerLink a:hover {
+  text-decoration: underline;
+}

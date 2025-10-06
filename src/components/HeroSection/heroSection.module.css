@@ -1,0 +1,98 @@
+.heroSection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    padding: 50px 0;
+    width: 100%;
+    position: relative;
+    min-height: 600px;
+}
+.heroIlustration {
+    margin-top: 5rem;
+    position: absolute;
+    top: 50px;
+    left: 70%;
+    transform: translateX(-40%);
+    z-index: 2;
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+}
+
+.heroContent {
+    width: 50%;
+    margin-bottom: 50px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 10%;
+}
+
+.heroTitle {
+    font-family: 'Aristotelica Bold', serif;
+    font-size: 3.5rem;
+    text-align: left;
+    text-transform: lowercase;
+    color: #DBA100;
+    font-weight:900;
+    margin-bottom: 20px;
+}
+
+.heroSubtitle {
+    font-size: 1.3rem;
+    color: #555;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.ctaButton {
+    background-color: #FBC737;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-family: "Aristotelica", sans-serif;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 6px 0px 0px rgba(219,161,0,0.75);
+    -webkit-box-shadow: 0px 6px 0px 0px rgba(219,161,0,0.75);
+    -moz-box-shadow: 0px 6px 0px 0px rgba(219,161,0,0.75);
+    display: inline-block;
+}
+
+.hillTopImageContainer {
+    position: absolute;
+    top: 330px;
+    left: 50%;
+    transform: translateX(-50%) rotate(180deg);
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.hillTopImage {
+    width: 10%;
+    display: block;
+    margin: 0 auto;
+}
+
+.hillBottomImageOverlay {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    margin-top: -5px; 
+}
+
+.hillBottomImage {
+    width: 130%;
+    display: block;
+    margin: 0 auto;
+}
+
