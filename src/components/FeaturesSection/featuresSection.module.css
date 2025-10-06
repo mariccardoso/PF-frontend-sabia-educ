@@ -1,0 +1,103 @@
+.featuresSection {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #fff8e1 0%, #fff3c4 100%);
+    margin-top: 100px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sectionTitle {
+    font-family: 'Aristotelica Bold', serif;
+    font-size: 2.8rem;
+    text-align: center;
+    color: #DBA100;
+    margin-bottom: 20px;
+    font-weight: 900;
+}
+
+.sectionSubtitle {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #666;
+    margin-bottom: 60px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.featuresGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.featureCard {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 3px solid transparent;
+}
+
+.featureCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 20px 40px rgba(251, 199, 55, 0.3);
+    border-color: #FBC737;
+}
+
+.featureIcon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    display: inline-block;
+    padding: 20px;
+    background: linear-gradient(135deg, #FBC737, #e6b800);
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    box-shadow: 0px 6px 0px 0px rgba(219,161,0,0.75);
+}
+
+.featureTitle {
+    font-family: 'Aristotelica Bold', serif;
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.featureDescription {
+    color: #666;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .featuresSection {
+        padding: 60px 15px;
+        margin-top: 50px;
+    }
+    
+    .sectionTitle {
+        font-size: 2.2rem;
+    }
+    
+    .featuresGrid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .featureCard {
+        padding: 25px;
+    }
+}

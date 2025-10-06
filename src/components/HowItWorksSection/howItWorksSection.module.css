@@ -1,0 +1,209 @@
+.howItWorksSection {
+    padding: 80px 20px;
+    background: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sectionTitle {
+    font-family: 'Aristotelica Bold', serif;
+    font-size: 2.8rem;
+    text-align: center;
+    color: #DBA100;
+    margin-bottom: 20px;
+    font-weight: 900;
+}
+
+.sectionSubtitle {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #666;
+    margin-bottom: 60px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.stepsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 80px;
+    position: relative;
+}
+
+.stepCard {
+    text-align: center;
+    padding: 40px 20px;
+    position: relative;
+    background: #fafafa;
+    border-radius: 20px;
+    border: 3px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.stepCard:hover {
+    border-color: #FBC737;
+    transform: translateY(-5px);
+    background: white;
+    box-shadow: 0px 15px 35px rgba(251, 199, 55, 0.2);
+}
+
+.stepNumber {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, #FBC737, #DBA100);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Aristotelica Bold', serif;
+    font-weight: 900;
+    font-size: 1.1rem;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+.stepIcon {
+    font-size: 3rem;
+    margin: 30px 0 20px;
+    display: block;
+}
+
+.stepTitle {
+    font-family: 'Aristotelica Bold', serif;
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.stepDescription {
+    color: #666;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.stepArrow {
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: #FBC737;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.ctaContainer {
+    text-align: center;
+    padding: 60px 40px;
+    background: linear-gradient(135deg, #fff8e1 0%, #fff3c4 100%);
+    border-radius: 30px;
+    border: 3px solid #FBC737;
+}
+
+.ctaTitle {
+    font-family: 'Aristotelica Bold', serif;
+    font-size: 2.2rem;
+    color: #DBA100;
+    margin-bottom: 15px;
+    font-weight: 900;
+}
+
+.ctaSubtitle {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 40px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ctaButtons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.primaryButton {
+    background: linear-gradient(135deg, #FBC737, #DBA100);
+    color: white;
+    padding: 18px 35px;
+    border-radius: 12px;
+    font-family: 'Aristotelica Bold', serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0px 6px 0px 0px rgba(219,161,0,0.75);
+    display: inline-block;
+}
+
+.primaryButton:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 9px 0px 0px rgba(219,161,0,0.75);
+}
+
+.secondaryButton {
+    background: transparent;
+    color: #DBA100;
+    padding: 18px 35px;
+    border: 3px solid #FBC737;
+    border-radius: 12px;
+    font-family: 'Aristotelica Bold', serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.secondaryButton:hover {
+    background: #FBC737;
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .howItWorksSection {
+        padding: 60px 15px;
+    }
+    
+    .sectionTitle {
+        font-size: 2.2rem;
+    }
+    
+    .stepsContainer {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .stepArrow {
+        display: none;
+    }
+    
+    .ctaContainer {
+        padding: 40px 20px;
+    }
+    
+    .ctaButtons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .primaryButton,
+    .secondaryButton {
+        width: 200px;
+        text-align: center;
+    }
+}
