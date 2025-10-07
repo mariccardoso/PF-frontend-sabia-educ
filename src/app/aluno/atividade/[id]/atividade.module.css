@@ -1,8 +1,8 @@
 .container {
   min-height: 100vh;
-  background: #ffffff;
-  padding: 2rem;
-  font-family: 'Comic Sans MS', 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #fef9e7 0%, #ffffff 100%);
+  padding: 1.5rem;
+  font-family: 'Poppins', sans-serif;
   color: #333;
   display: flex;
   flex-direction: column;
@@ -12,28 +12,28 @@
 .header {
   display: flex;
   align-items: center;
-  gap: 2rem;
-  background: linear-gradient(135deg, #FBC737, #e6b800);
+  gap: 1.5rem;
+  background: #ffffff;
   padding: 2rem;
-  border-radius: 25px;
-  border: 3px solid #FBC737;
-  box-shadow: 0 6px 15px rgba(251, 199, 55, 0.3);
+  border-radius: 20px;
+  border: 2px solid #FBC737;
+  box-shadow: 0 4px 20px rgba(251, 199, 55, 0.1);
   margin-bottom: 2rem;
-  max-width: 800px;
+  max-width: 900px;
   width: 100%;
 }
 
 .activityIcon {
-  font-size: 4rem;
-  background: #ffffff;
-  color: #e6b800;
-  border-radius: 20px;
-  width: 80px;
-  height: 80px;
+  font-size: 2.5rem;
+  background: linear-gradient(135deg, #FBC737, #f4b432);
+  color: #ffffff;
+  border-radius: 16px;
+  width: 70px;
+  height: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 12px rgba(251, 199, 55, 0.3);
   flex-shrink: 0;
 }
 
@@ -43,45 +43,46 @@
 }
 
 .header h1 {
-  color: #ffffff;
-  font-size: 2.5rem;
-  margin: 0 0 1rem 0;
-  text-shadow: 2px 2px 4px rgba(219, 161, 0, 0.3);
+  color: #2c3e50;
+  font-size: 2rem;
+  margin: 0 0 0.5rem 0;
+  font-weight: 600;
 }
 
 .header p {
-  color: #ffffff;
-  font-size: 1.2rem;
+  color: #666;
+  font-size: 1.1rem;
   margin: 0 0 1rem 0;
-  opacity: 0.9;
+  line-height: 1.4;
 }
 
 .difficulty {
-  background: rgba(255, 255, 255, 0.2);
+  background: #FBC737;
   color: #ffffff;
-  padding: 0.5rem 1rem;
-  border-radius: 15px;
-  font-size: 0.9rem;
-  font-weight: bold;
+  padding: 0.4rem 1rem;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 500;
   display: inline-block;
 }
 
 .statusCard {
   background: #ffffff;
-  border: 3px solid #FBC737;
-  border-radius: 20px;
-  padding: 1.5rem 2rem;
+  border: 2px solid #f0f0f0;
+  border-radius: 16px;
+  padding: 1.5rem;
   margin-bottom: 2rem;
-  box-shadow: 0 4px 10px rgba(251, 199, 55, 0.2);
-  max-width: 800px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  max-width: 900px;
   width: 100%;
   text-align: center;
 }
 
 .statusCard h3 {
-  color: #e6b800;
+  color: #2c3e50;
   margin: 0 0 1rem 0;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 
 .statusBadge {
@@ -90,51 +91,51 @@
   justify-content: center;
   gap: 0.8rem;
   padding: 1rem 2rem;
-  border-radius: 15px;
-  font-weight: bold;
-  font-size: 1.1rem;
+  border-radius: 12px;
+  font-weight: 500;
+  font-size: 1rem;
   margin: 0 auto;
-  max-width: 400px;
+  max-width: 300px;
 }
 
 .completed {
-  background: linear-gradient(45deg, #4CAF50, #45a049);
+  background: #27ae60;
   color: #ffffff;
 }
 
 .inProgress {
-  background: linear-gradient(45deg, #FBC737, #e6b800);
+  background: #FBC737;
   color: #ffffff;
 }
 
 .notStarted {
-  background: #f5f5f5;
-  border: 2px solid #ddd;
-  color: #666;
+  background: #f8f9fa;
+  border: 2px solid #e9ecef;
+  color: #6c757d;
 }
 
 .statusIcon {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .statusText {
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .scoreDisplay {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.9);
   padding: 0.3rem 0.8rem;
-  border-radius: 10px;
+  border-radius: 8px;
   font-size: 0.9rem;
 }
 
 .activityBox {
   background: #ffffff;
-  border: 3px solid #FBC737;
-  border-radius: 25px;
-  padding: 3rem;
-  box-shadow: 0 8px 20px rgba(251, 199, 55, 0.3);
-  max-width: 700px;
+  border: 2px solid #f0f0f0;
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  max-width: 800px;
   width: 100%;
   margin-bottom: 2rem;
   position: relative;
@@ -143,29 +144,30 @@
 .activityBox::before {
   content: '✨';
   position: absolute;
-  top: 15px;
-  right: 20px;
-  font-size: 2rem;
-  opacity: 0.7;
+  top: 20px;
+  right: 25px;
+  font-size: 1.5rem;
+  opacity: 0.4;
 }
 
 .quiz h3,
 .memory h3,
 .dragdrop h3 {
-  color: #e6b800;
-  font-size: 1.8rem;
+  color: #2c3e50;
+  font-size: 1.6rem;
   text-align: center;
-  margin-bottom: 1rem;
-  font-weight: bold;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
 }
 
 .quiz p,
 .memory p,
 .dragdrop p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   text-align: center;
   margin-bottom: 2rem;
   color: #666;
+  line-height: 1.5;
 }
 
 /* Quiz específico */
@@ -174,19 +176,20 @@
 }
 
 .questionCard {
-  background: #f8f9fa;
+  background: #fef9e7;
   border: 2px solid #FBC737;
-  border-radius: 20px;
+  border-radius: 16px;
   padding: 2rem;
   margin-bottom: 2rem;
 }
 
 .question {
-  font-size: 1.4rem;
-  color: #e6b800;
-  font-weight: bold;
+  font-size: 1.3rem;
+  color: #2c3e50;
+  font-weight: 500;
   text-align: center;
   margin-bottom: 1.5rem;
+  line-height: 1.4;
 }
 
 .option {
@@ -213,48 +216,55 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 
 .options button {
-  background: linear-gradient(45deg, #FBC737, #e6b800);
-  color: #ffffff;
-  border: 3px solid rgb(219,161,0);
-  padding: 1.5rem 2rem;
-  border-radius: 20px;
-  font-size: 1.2rem;
-  font-weight: bold;
+  background: #ffffff;
+  color: #2c3e50;
+  border: 2px solid #FBC737;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 500;
   cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 10px rgba(251, 199, 55, 0.3);
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(251, 199, 55, 0.1);
+  text-align: left;
 }
 
 .options button:hover {
-  transform: scale(1.05) rotate(1deg);
-  box-shadow: 0 6px 15px rgba(251, 199, 55, 0.5);
-  background: linear-gradient(45deg, #e6b800, rgb(219,161,0));
+  background: #FBC737;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(251, 199, 55, 0.2);
 }
 
+.options button:active {
+  transform: translateY(0);
+}
+
+/* Jogo da Memória */
 .memoryGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   margin: 2rem 0;
-  max-width: 400px;
+  max-width: 450px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .memoryCard {
-  background: linear-gradient(45deg, #FBC737, #e6b800);
-  border: 3px solid rgb(219,161,0);
-  border-radius: 15px;
-  padding: 2rem;
+  background: #ffffff;
+  border: 2px solid #FBC737;
+  border-radius: 12px;
+  padding: 1.5rem;
   font-size: 2rem;
   text-align: center;
   cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 10px rgba(251, 199, 55, 0.3);
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(251, 199, 55, 0.1);
   min-height: 80px;
   display: flex;
   align-items: center;
@@ -262,11 +272,12 @@
 }
 
 .memoryCard:hover {
-  transform: scale(1.05) rotate(2deg);
-  box-shadow: 0 6px 15px rgba(251, 199, 55, 0.5);
+  background: #FBC737;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(251, 199, 55, 0.2);
 }
 
-/* Drag and Drop específico */
+/* Drag and Drop */
 .dragArea {
   margin: 2rem 0;
 }
@@ -280,22 +291,23 @@
 }
 
 .dragItem {
-  background: linear-gradient(45deg, #FBC737, #e6b800);
-  border: 3px solid rgb(219,161,0);
-  border-radius: 15px;
-  padding: 1rem 1.5rem;
-  font-size: 1.2rem;
+  background: #FBC737;
+  border: 2px solid #f4b432;
+  border-radius: 12px;
+  padding: 0.8rem 1.2rem;
+  font-size: 1.1rem;
   color: #ffffff;
-  font-weight: bold;
+  font-weight: 500;
   cursor: grab;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 10px rgba(251, 199, 55, 0.3);
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(251, 199, 55, 0.2);
   user-select: none;
 }
 
 .dragItem:hover {
-  transform: scale(1.05) rotate(2deg);
-  box-shadow: 0 6px 15px rgba(251, 199, 55, 0.5);
+  background: #f4b432;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(251, 199, 55, 0.3);
 }
 
 .dragItem:active {
@@ -312,60 +324,64 @@
 
 .dropZone {
   background: #f8f9fa;
-  border: 3px dashed #FBC737;
-  border-radius: 15px;
-  padding: 2rem 1.5rem;
-  min-width: 100px;
+  border: 2px dashed #dee2e6;
+  border-radius: 12px;
+  padding: 1.5rem 1rem;
+  min-width: 120px;
   min-height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.2rem;
-  color: #e6b800;
-  font-weight: bold;
-  transition: all 0.3s ease;
+  font-size: 1.1rem;
+  color: #6c757d;
+  font-weight: 500;
+  transition: all 0.2s ease;
 }
 
-.dropZone:hover {
-  background: rgba(251, 199, 55, 0.1);
+.dropZone:hover,
+.dropZone.dragOver {
+  background: #fef9e7;
+  border-color: #FBC737;
   border-style: solid;
+  color: #2c3e50;
 }
 
 .dragBox {
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 1.5rem;
   margin: 2rem 0;
   flex-wrap: wrap;
 }
 
 .dragBox span {
-  background: linear-gradient(45deg, #FBC737, #e6b800);
-  border: 3px solid rgb(219,161,0);
-  border-radius: 20px;
-  padding: 2rem;
-  font-size: 3rem;
+  background: #FBC737;
+  border: 2px solid #f4b432;
+  border-radius: 16px;
+  padding: 1.5rem;
+  font-size: 2.5rem;
   cursor: grab;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 10px rgba(251, 199, 55, 0.3);
+  transition: all 0.2s ease;
+  box-shadow: 0 3px 10px rgba(251, 199, 55, 0.2);
   user-select: none;
 }
 
 .dragBox span:hover {
-  transform: scale(1.1) rotate(3deg);
-  box-shadow: 0 6px 15px rgba(251, 199, 55, 0.5);
+  background: #f4b432;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(251, 199, 55, 0.3);
 }
 
 .dragBox span:active {
   cursor: grabbing;
-  transform: scale(1.05);
+  transform: scale(0.95);
 }
 
 /* Área de pontuação */
 .scoreInput {
   background: #f8f9fa;
-  border: 2px solid #FBC737;
-  border-radius: 20px;
+  border: 2px solid #e9ecef;
+  border-radius: 16px;
   padding: 1.5rem;
   margin-top: 2rem;
   text-align: center;
@@ -373,129 +389,134 @@
 
 .scoreInput label {
   display: block;
-  color: #e6b800;
-  font-weight: bold;
+  color: #2c3e50;
+  font-weight: 500;
   font-size: 1.1rem;
   margin-bottom: 1rem;
 }
 
 .scoreField {
   background: #ffffff;
-  border: 3px solid #FBC737;
-  border-radius: 15px;
-  padding: 1rem 1.5rem;
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #e6b800;
+  border: 2px solid #FBC737;
+  border-radius: 12px;
+  padding: 0.8rem 1.2rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #2c3e50;
   text-align: center;
-  width: 200px;
-  box-shadow: 0 3px 8px rgba(251, 199, 55, 0.2);
-  transition: all 0.3s ease;
+  width: 150px;
+  box-shadow: 0 2px 8px rgba(251, 199, 55, 0.1);
+  transition: all 0.2s ease;
 }
 
 .scoreField:focus {
   outline: none;
-  border-color: rgb(219,161,0);
-  box-shadow: 0 5px 12px rgba(251, 199, 55, 0.4);
-  transform: scale(1.02);
+  border-color: #f4b432;
+  box-shadow: 0 0 0 3px rgba(251, 199, 55, 0.1);
+  transform: translateY(-1px);
 }
 
 /* Área de ação */
 .actionArea {
-  margin-top: 3rem;
+  margin-top: 2.5rem;
   text-align: center;
   width: 100%;
 }
 
 .completeBtn {
-  background: linear-gradient(45deg, #4CAF50, #45a049);
+  background: #27ae60;
   color: #ffffff;
-  border: 3px solid #4CAF50;
-  padding: 1.5rem 3rem;
-  border-radius: 25px;
-  font-size: 1.3rem;
-  font-weight: bold;
+  border: none;
+  padding: 1rem 2.5rem;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 500;
   cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 6px 15px rgba(76, 175, 80, 0.3);
+  transition: all 0.2s ease;
+  box-shadow: 0 3px 12px rgba(39, 174, 96, 0.2);
   display: inline-block;
 }
 
 .completeBtn:hover:not(:disabled) {
-  transform: scale(1.05) rotate(1deg);
-  box-shadow: 0 8px 20px rgba(76, 175, 80, 0.5);
-  background: linear-gradient(45deg, #45a049, #388e3c);
+  background: #229954;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 18px rgba(39, 174, 96, 0.3);
+}
+
+.completeBtn:active:not(:disabled) {
+  transform: translateY(0);
 }
 
 .completeBtn:disabled {
-  background: #cccccc;
-  border-color: #cccccc;
+  background: #bdc3c7;
   cursor: not-allowed;
   transform: none;
   box-shadow: none;
 }
 
 .feedback {
-  padding: 1.5rem 3rem;
-  border-radius: 20px;
-  font-size: 1.5rem;
-  font-weight: bold;
+  padding: 1.2rem 2rem;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  font-weight: 500;
   text-align: center;
-  border: 3px solid;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  border: 2px solid;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
   margin-top: 2rem;
 }
 
 .success {
-  background: linear-gradient(135deg, #FBC737, #e6b800);
-  color: #ffffff;
-  border-color: rgb(219,161,0);
-  box-shadow: 0 6px 15px rgba(251, 199, 55, 0.4);
+  background: #d4edda;
+  color: #155724;
+  border-color: #c3e6cb;
 }
 
 .errorFeedback {
-  background: #ffffff;
-  color: #e6b800;
-  border-color: #FBC737;
-  box-shadow: 0 6px 15px rgba(251, 199, 55, 0.3);
+  background: #f8d7da;
+  color: #721c24;
+  border-color: #f5c6cb;
 }
 
 .loading {
   text-align: center;
-  font-size: 1.5rem;
-  margin-top: 4rem;
-  color: #e6b800;
-  font-weight: bold;
+  font-size: 1.3rem;
+  margin-top: 3rem;
+  color: #2c3e50;
+  font-weight: 500;
 }
 
 .loading::after {
-  content: ' 🌻';
-  animation: spin 2s linear infinite;
+  content: ' 🌟';
+  animation: bounce 1s ease-in-out infinite alternate;
 }
 
 .error {
   text-align: center;
-  font-size: 1.3rem;
-  margin-top: 4rem;
-  color: #e6b800;
-  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 3rem;
+  color: #2c3e50;
+  font-weight: 500;
   background: #ffffff;
-  border: 3px solid #FBC737;
-  border-radius: 20px;
+  border: 2px solid #f0f0f0;
+  border-radius: 16px;
   padding: 2rem;
-  box-shadow: 0 6px 15px rgba(251, 199, 55, 0.3);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 
 .error::before {
   content: '😔';
-  font-size: 3rem;
+  font-size: 2rem;
   display: block;
   margin-bottom: 1rem;
 }
 
-@keyframes spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+@keyframes bounce {
+  from { 
+    transform: translateY(0px); 
+  }
+  to { 
+    transform: translateY(-10px); 
+  }
 }
 
 /* Responsividade */
@@ -507,18 +528,18 @@
   .header {
     flex-direction: column;
     text-align: center;
-    gap: 1.5rem;
+    gap: 1rem;
     padding: 1.5rem;
   }
   
   .header h1 {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
   
   .activityIcon {
-    width: 60px;
-    height: 60px;
-    font-size: 2.5rem;
+    width: 50px;
+    height: 50px;
+    font-size: 1.8rem;
   }
   
   .activityBox {
@@ -527,30 +548,63 @@
   
   .memoryGrid {
     grid-template-columns: repeat(2, 1fr);
-    max-width: 300px;
+    max-width: 280px;
+    gap: 0.8rem;
   }
   
   .dragItems,
   .dropZones {
     flex-direction: column;
     align-items: center;
+    gap: 0.8rem;
   }
   
   .dragItem,
   .dropZone {
     width: 200px;
+    font-size: 1rem;
   }
   
   .scoreField {
-    width: 150px;
+    width: 120px;
   }
   
   .completeBtn {
-    padding: 1.2rem 2rem;
-    font-size: 1.1rem;
+    padding: 0.9rem 2rem;
+    font-size: 1rem;
   }
   
   .options {
     gap: 0.8rem;
+  }
+  
+  .dragBox {
+    gap: 1rem;
+  }
+  
+  .dragBox span {
+    font-size: 2rem;
+    padding: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .memoryGrid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 240px;
+  }
+  
+  .header {
+    padding: 1rem;
+  }
+  
+  .activityBox {
+    padding: 1.5rem;
+  }
+  
+  .quiz h3,
+  .memory h3,
+  .dragdrop h3 {
+    font-size: 1.4rem;
   }
 }
