@@ -28,12 +28,12 @@ export default function AlunoDetalhes() {
   const loadStudentData = async (token) => {
     try {
       // Carregar dados do aluno
-      const studentRes = await axios.get(`http://localhost:5000/auth/profile/${id}`, {
+      const studentRes = await axios.get(`http://localhost:5000/users/${id}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
 
       // Carregar progresso do aluno
-      const progressRes = await axios.get(`http://localhost:5000/progress/${id}`, {
+      const progressRes = await axios.get(`http://localhost:5000/progress/student/${id}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
 

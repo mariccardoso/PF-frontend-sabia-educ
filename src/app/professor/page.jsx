@@ -2,8 +2,8 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import axios from "axios";
-import Link from "next/link";
 import styles from "./professorDashboard.module.css";
+import Header from "@/components/Header";
 
 export default function DashboardProfessor() {
   const router = useRouter();
@@ -143,14 +143,12 @@ export default function DashboardProfessor() {
 
   return (
     <div className={styles.container}>
+      <Header buttonText='Sair' onButtonClick={handleLogout} />
       <header className={styles.header}>
         <div>
           <h1>Olá, {user?.name?.split(" ")[0]} 👩‍🏫</h1>
           <p>Acompanhe o progresso dos seus alunos</p>
         </div>
-        <button onClick={handleLogout} className={styles.logout}>
-          Sair
-        </button>
       </header>
 
       {/* Cards de Estatísticas */}
@@ -186,7 +184,7 @@ export default function DashboardProfessor() {
       </div>
 
       <div className={styles.dashboardContent}>
-        {/* Lista de Alunos */}
+        {/* Lista de Alunos - SEM LINK */}
         <section className={styles.studentsSection}>
           <h2>👥 Meus Alunos</h2>
           <div className={styles.studentsList}>
@@ -204,31 +202,40 @@ export default function DashboardProfessor() {
                     : 0;
 
                 return (
-                  <Link key={student.id} href={`/professor/aluno/${student.id}`}>
-                    <div className={styles.studentCard}>
-                      <div className={styles.studentAvatar}>
-                        {student.name.charAt(0).toUpperCase()}
-                      </div>
-                      <div className={styles.studentInfo}>
-                        <h4>{student.name}</h4>
-                        <p>{student.bio || "Sem descrição"}</p>
-                        <div className={styles.studentProgress}>
-                          <span>Progresso: {progressPercent}%</span>
-                          <div className={styles.progressBar}>
-                            <div
-                              className={styles.progressFill}
-                              style={{ width: `${progressPercent}%` }}
-                            ></div>
-                          </div>
+                  <div key={student.id} className={styles.studentCard}>
+                    <div className={styles.studentAvatar}>
+                      {student.name.charAt(0).toUpperCase()}
+                    </div>
+                    <div className={styles.studentInfo}>
+                      <h4>{student.name}</h4>
+                      <p>{student.email}</p>
+                      <p className={styles.studentBio}>{student.bio || "Sem descrição"}</p>
+                      <div className={styles.studentProgress}>
+                        <span>Progresso: {progressPercent}%</span>
+                        <div className={styles.progressBar}>
+                          <div
+                            className={styles.progressFill}
+                            style={{ width: `${progressPercent}%` }}
+                          ></div>
                         </div>
                       </div>
+                      <div className={styles.studentStats}>
+                        <span className={styles.statItem}>
+                          📊 {studentProgress.length} atividades
+                        </span>
+                        <span className={styles.statItem}>
+                          ✅ {completedCount} concluídas
+                        </span>
+                      </div>
                     </div>
-                  </Link>
+                  </div>
                 );
               })
             ) : (
               <div className={styles.noData}>
-                <p>Nenhum aluno cadastrado ainda.</p>
+                <div className={styles.noDataIcon}>👥</div>
+                <h3>Nenhum aluno cadastrado</h3>
+                <p>Os alunos aparecerão aqui quando se cadastrarem na plataforma.</p>
               </div>
             )}
           </div>
@@ -269,7 +276,9 @@ export default function DashboardProfessor() {
               })
             ) : (
               <div className={styles.noData}>
-                <p>Nenhuma atividade disponível.</p>
+                <div className={styles.noDataIcon}>📚</div>
+                <h3>Nenhuma atividade disponível</h3>
+                <p>As atividades aparecerão aqui quando forem criadas.</p>
               </div>
             )}
           </div>
@@ -325,7 +334,9 @@ export default function DashboardProfessor() {
               })
           ) : (
             <div className={styles.noData}>
-              <p>Nenhum progresso registrado ainda.</p>
+              <div className={styles.noDataIcon}>📈</div>
+              <h3>Nenhum progresso registrado</h3>
+              <p>O progresso dos alunos aparecerá aqui quando começarem a fazer as atividades.</p>
             </div>
           )}
         </div>

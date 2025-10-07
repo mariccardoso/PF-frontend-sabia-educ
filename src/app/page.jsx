@@ -10,7 +10,7 @@ import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <div className={styles.container}>
-      <Header />
+      <Header buttonText="Comece Agora" />
       <main className={styles.main}>
         <HeroSection />
         <FeaturesSection />
