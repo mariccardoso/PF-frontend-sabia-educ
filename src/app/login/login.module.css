@@ -44,3 +44,60 @@
 .registerLink a:hover {
   text-decoration: underline;
 }
+
+@media (max-width: 1024px) {
+  .container h2 {
+    font-size: 1.8rem;
+  }
+
+  .error {
+    font-size: 13px;
+    padding: 8px;
+    margin: 8px 0;
+  }
+
+  .registerLink {
+    margin-top: 15px;
+    font-size: 0.95rem;
+  }
+}
+
+/* Smartphones grandes e médios */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .container h2 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .error {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .registerLink {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+}
+
+/* Smartphones pequenos */
+@media (max-width: 480px) {
+  .container h2 {
+    font-size: 1.4rem;
+    margin-top: 15px;
+  }
+
+  .error {
+    font-size: 11px;
+    padding: 5px;
+  }
+
+  .registerLink {
+    margin-top: 10px;
+    font-size: 0.85rem;
+  }
+}
