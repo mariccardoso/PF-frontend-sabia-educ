@@ -69,7 +69,7 @@ export default function Login() {
 
   return (
     <div className={styles.container}>
-      <Header />
+      <Header buttonText='Conheça a Sabiá' buttonHref='/' />
       <Image
         src="/images/11.png"
         alt="mascote"

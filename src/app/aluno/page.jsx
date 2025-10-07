@@ -4,6 +4,7 @@ import { useRouter } from 'next/navigation';
 import axios from 'axios';
 import Link from 'next/link';
 import styles from './alunoDashboard.module.css';
+import Header from '@/components/Header';
 
 export default function DashboardAluno() {
   const router = useRouter();
@@ -85,14 +86,12 @@ export default function DashboardAluno() {
 
   return (
     <div className={styles.container}>
+      <Header buttonText='Sair' onButtonClick={handleLogout} />
       <header className={styles.header}>
         <div>
           <h1>Bem-vindo(a), {user?.name?.split(' ')[0]} 👋</h1>
           <p>Aprenda brincando com as atividades do dia!</p>
         </div>
-        <button onClick={handleLogout} className={styles.logout}>
-          Sair
-        </button>
       </header>
 
       {/* Barra de progresso geral do aluno */}

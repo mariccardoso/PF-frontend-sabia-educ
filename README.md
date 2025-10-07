@@ -29,8 +29,8 @@
 
 | Tecnologia | Versão | Descrição |
 |------------|--------|-----------|
-| **Next.js** | 14+ | Framework React para produção |
-| **React** | 18+ | Biblioteca para interfaces de usuário |
+| **Next.js** | 15 | Framework React para produção |
+| **React** | 18 | Biblioteca para interfaces de usuário |
 | **JavaScript** | ES6+ | Linguagem de programação |
 | **CSS Modules** | - | Estilização componentizada |
 | **Axios** | - | Cliente HTTP para API |
@@ -47,16 +47,10 @@ sabia-frontend/
 │   ├── 📁 app/                 → Páginas do Next.js (App Router)
 │   │   ├── 📁 aluno/          → Páginas do dashboard do aluno
 │   │   │   ├── 📁 atividade/    → Página de atividade (quiz, jogo, etc)
-│   │   │   ├── 📁 login/          → Página de autenticação
-│   │   │   └── 📁 register/       → Página de cadastro
+│   │   ├── 📁 professor/          → Página de autenticação
+│   │   ├── 📁 login/          → Página de autenticação
+│   │   └── 📁 register/       → Página de cadastro
 │   ├── 📁 components/         → Componentes reutilizáveis
-│   │   ├── 📁 Header/         → Cabeçalho da aplicação
-│   │   ├── 📁 Quiz/           → Componente de quiz
-│   │   ├── 📁 DragDrop/       → Atividade drag-and-drop
-│   │   └── 📁 MemoryGame/     → Jogo da memória
-│   ├── 📁 services/           → Integração com API
-│   ├── 📁 hooks/              → Hooks customizados
-│   └── 📁 styles/             → Estilos globais
 ├── 📄 package.json
 └── 📄 README.md
 ```
@@ -77,7 +71,6 @@ sabia-frontend/
 
 ### 🎮 **Atividades Interativas**
 - ✅ **Quiz**: Perguntas e respostas temáticas
-- ✅ **Drag & Drop**: Arrastar e soltar elementos
 - ✅ **Memory Game**: Jogo da memória personalizado
 - ✅ Feedback instantâneo para respostas
 
@@ -86,6 +79,10 @@ sabia-frontend/
 - ✅ Tipografia clara e legível
 - ✅ Botões e elementos amigáveis
 - ✅ Interface responsiva
+
+### 📊 **Acompanhamento de Progresso**
+- ✅ Visualização de progresso em tempo real
+- ✅ Relatórios detalhados para professores
 
 ---
 
@@ -111,6 +108,9 @@ O frontend consome os seguintes endpoints do backend:
 
 - Node.js 18+ instalado
 - Backend da aplicação rodando na porta 5000
+
+Acesse [https://](http://localhost:3000) no seu navegador
+
 
 ### 🔧 Instalação
 
