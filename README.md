@@ -109,8 +109,7 @@ O frontend consome os seguintes endpoints do backend:
 - Node.js 18+ instalado
 - Backend da aplicação rodando na porta 5000
 
-Acesse [https://](http://localhost:3000) no seu navegador
-
+Acesse [https://github.com/mariccardoso/PF-backend-sabia.git](https://github.com/mariccardoso/PF-backend-sabia.git) e siga as instruções para configurar o backend.
 
 ### 🔧 Instalação
 
