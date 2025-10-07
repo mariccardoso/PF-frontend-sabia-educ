@@ -1,0 +1,192 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  min-height: calc(100vh - 80px); /* Considera altura do header */
+}
+
+.leftSection {
+  flex: 1;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.leftSection::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23FBC737' fill-opacity='0.05'%3E%3Ccircle cx='30' cy='30' r='4'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  opacity: 0.3;
+}
+
+.presentationContent {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  max-width: 500px;
+}
+
+.presentationTitle {
+  font-family: "Aristotelica Bold", sans-serif;
+  font-size: 3rem;
+  color: #FBC737;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.presentationSubtitle {
+  font-family: "Aristotelica", sans-serif;
+  font-size: 1.3rem;
+  color: #000;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  opacity: 0.95;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: rgba(251, 199, 55, 0.1);
+  padding: 15px 20px;
+  border-radius: 10px;
+  border: 1px solid rgba(251, 199, 55, 0.2);
+}
+
+.featureIcon {
+  width: 24px;
+  height: 24px;
+  background: #FBC737;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+  font-size: 14px;
+}
+
+.featureText {
+  font-family: "Aristotelica", sans-serif;
+  color: #FBC737;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.rightSection {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background: #f8f9fa;
+}
+
+.formContainer {
+  width: 100%;
+  max-width: 500px;
+}
+
+.welcome {
+  font-family: "Aristotelica Bold", sans-serif;
+  font-size: 2.2rem;
+  color: #333;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.error {
+  color: #e74c3c;
+  background-color: #fdf2f2;
+  border: 1px solid #f5c6cb;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin: 20px 0;
+  text-align: center;
+  font-size: 14px;
+  font-family: "Aristotelica", sans-serif;
+}
+
+.success {
+  color: #27ae60;
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin: 20px 0;
+  text-align: center;
+  font-size: 14px;
+  font-family: "Aristotelica", sans-serif;
+}
+
+.registerLink {
+  margin-top: 30px;
+  text-align: center;
+  font-family: "Aristotelica", sans-serif;
+  color: #666;
+  font-size: 1rem;
+}
+
+.registerLink a {
+  color: #FBC737;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.registerLink a:hover {
+  text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+    min-height: auto;
+  }
+  
+  .leftSection {
+    padding: 30px 20px;
+  }
+  
+  .presentationTitle {
+    font-size: 2.2rem;
+  }
+  
+  .presentationSubtitle {
+    font-size: 1.1rem;
+  }
+  
+  .features {
+    margin-top: 20px;
+  }
+  
+  .rightSection {
+    padding: 30px 20px;
+  }
+  
+  .welcome {
+    font-size: 1.8rem;
+  }
+}

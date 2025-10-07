@@ -6,7 +6,7 @@ export default function HeroSection() {
     return (
         <section className={styles.heroSection}>
             <div className={styles.heroContent}>
-                <h1 className={styles.heroTitle}>Aprender a ler é difícil. Nós fazemos ser divertido!</h1>
+                <h1 className={styles.heroTitle}>Aprender é difícil. Nós fazemos ser divertido!</h1>
                 <p className={styles.heroSubtitle}>Sabiá Educação é uma plataforma digital inclusiva voltada para auxiliar crianças e jovens na alfabetização.</p>
                 <Link href="/login" className={styles.ctaButton}>Comece Agora</Link>
             </div>
