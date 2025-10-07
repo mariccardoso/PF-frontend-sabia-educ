@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="/public/images/SabiaLogo.png" height="150px">
+  <img src="/public/images/SabiaLogo.png" height="50px">
   <h1>🌟 Sabia Educ - Frontend</h1>
   <p><em>Plataforma educacional inclusiva para crianças e jovens com necessidades especiais</em></p>
   
